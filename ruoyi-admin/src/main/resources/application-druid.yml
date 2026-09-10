@@ -6,16 +6,16 @@ spring:
         druid:
             # 主库数据源
             master:
-                url: ${SPRING_DATASOURCE_URL}
-                username: ${SPRING_DATASOURCE_USERNAME}
-                password: ${SPRING_DATASOURCE_PASSWORD}
+                url: ${SPRING_DATASOURCE_DRUID_MASTER_URL}
+                username: ${SPRING_DATASOURCE_DRUID_MASTER_USERNAME}
+                password: ${SPRING_DATASOURCE_DRUID_MASTER_PASSWORD}
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭
                 enabled: false
-                url: ${SPRING_DATASOURCE_SLAVE_URL}
-                username: ${SPRING_DATASOURCE_SLAVE_USERNAME}
-                password: ${SPRING_DATASOURCE_SLAVE_PASSWORD}
+                url: ${SPRING_DATASOURCE_DRUID_SLAVE_URL}
+                username: ${SPRING_DATASOURCE_DRUID_SLAVE_USERNAME}
+                password: ${SPRING_DATASOURCE_DRUID_SLAVE_PASSWORD}
             # 初始连接数
             initialSize: 5
             # 最小连接池数量
