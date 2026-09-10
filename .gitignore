@@ -8,6 +8,9 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
+# Frontend build output
+ruoyi-admin/src/main/resources/static/
+
 ######################################################################
 # IDE
 
