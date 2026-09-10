@@ -227,7 +227,7 @@ export const constantRoutes = [{
 ]
 
 export default new Router({
-  mode: 'history', // 去掉url中的#
+  mode: 'hash', // hash模式，不需要服务器配置
   scrollBehavior: () => ({
     y: 0
   }),
